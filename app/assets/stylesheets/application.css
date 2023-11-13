@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+.ul-no-deco {
+  list-style: none;
+  display: flex;
+}
+
+.li-blue {
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  background-color: rgb(63, 110, 239);
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-content: center;
+}
+
+.body-font-sans {
+  font-family: sans-serif;
+}

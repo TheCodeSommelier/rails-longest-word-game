@@ -1,0 +1,12 @@
+<h1>Result</h1>
+
+
+<% if !@is_an_english_word %>
+  <p>Sorry but <%= @player_word %> doesn't exist...</p>
+<% elsif !@is_a_valid_word %>
+  <p>Sorry but <%= @player_word %> is not in the grid...</p>
+<% elsif @is_a_copy %>
+  <p>Sorry but <%= @player_word %> is direct copy... </p>
+<% else %>
+  <p>Great <%= @player_word %> is a valid word! Your score is <%= @score%></p>
+<% end %>
